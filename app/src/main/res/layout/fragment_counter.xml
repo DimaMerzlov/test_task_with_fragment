@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/fragment_background"
+    android:layout_height="match_parent"
+    tools:context=".CounterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginStart="100dp"
+            android:id="@+id/tv_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/circle"
+            android:text="click to notification"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+
+        android:orientation="horizontal">
+
+        <!--<ImageView
+            android:background="@drawable/small_citcle"
+            android:layout_gravity="center"
+            android:id="@+id/iv_button_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_exposure_plus_1_24" />-->
+
+        <TextView
+            android:background="@drawable/small_citcle"
+            android:layout_gravity="center"
+            android:id="@+id/tv_minus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="37sp"
+            android:textColor="@color/fragment_background"
+            android:text="-" />
+        <TextView
+            android:textSize="37sp"
+
+            android:layout_gravity="center"
+            android:id="@+id/tv_counter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="1" />
+        <TextView
+            android:textSize="37sp"
+            android:textColor="@color/fragment_background"
+
+            android:background="@drawable/small_citcle"
+            android:layout_gravity="center"
+            android:id="@+id/tv_plus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+" />
+
+        <!--<ImageView
+            android:id="@+id/iv_button_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:src="@drawable/ic_baseline_exposure_neg_1_24" />-->
+
+    </LinearLayout>
+
+
+</FrameLayout>
